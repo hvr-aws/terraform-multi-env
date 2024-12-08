@@ -7,11 +7,6 @@ terraform {
   }
   
   backend "s3" {
-    bucket = "81s-remote-aws"
-    key    = "aws-81s"
-    region = "us-east-1"
-    dynamodb_table = "81s-locking"
-  }
 }
 
 provider "aws" {
